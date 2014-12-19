@@ -11,7 +11,6 @@ class Ruler {
     public function __construct() {
         $this->rules[] = new rule\AjaxRule();
         $this->rules[] = new rule\DefaultRule();
-        $this->rules[] = new rule\StaticRule();
         $this->rules[] = new rule\ErrorRule();
     }
 
@@ -34,8 +33,8 @@ class Ruler {
 
     private function checkRoute($route) {
         if (class_exists($route['model']) 
-                && class_exists($route['controller']) 
-                && (empty($route['method']) || method_exists($route['controller'], $route['method'])) 
+                && class_exists($route['controller'])
+                && (empty($route['method']) || method_exists($route['controller'], $route['method']))
                 && class_exists($route['view'])) {
             return true;
         } else {

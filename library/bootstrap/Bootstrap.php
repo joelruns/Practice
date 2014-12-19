@@ -14,7 +14,7 @@ class Bootstrap {
 
         //parse request
         $router = new Router($request->url_parts);
-        
+
         //dispatch routes
         $dispatch = new Dispatch();
         $dispatch->execute($router->route, $request->url_parts);
