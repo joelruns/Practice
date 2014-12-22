@@ -4,12 +4,31 @@ namespace controller\access;
 
 use \controller\Controller as Controller;
 
-class TestAccess extends Controller {
+class DatabaseMapper extends Controller {
 
-    public function __construct($model) {
-        parent::__construct($model);
-        $this->model->pushAddress($_SERVER['REQUEST_URI']);
+    public function __construct() {
+        parent::__construct();
     }
+    
+    public function select_tuple_length() {
+        $query = "AKDFJASLDFJASLDFK";
+        $result = mysql_query($query);
+        $results = mysql_rest...
+        return $array with data
+        
+    }
+    
+    public function select_blog() {
+    
+    }
+    
+    public function insert_title
+    
+    public function insert_tuple
+    
+    
+    
+    
 
 }
 

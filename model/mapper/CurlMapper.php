@@ -1,14 +1,18 @@
 <?php
 
-namespace controller\access;
+namespace model\mapper;
 
-use \controller\Controller as Controller;
+use \model\Model as Model;
 
-class TestAccess extends Controller {
+class CurlMapper extends Model {
 
-    public function __construct($model) {
-        parent::__construct($model);
-        $this->model->pushAddress($_SERVER['REQUEST_URI']);
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public function curl_address($address) {
+        // RUN CURL
+        // RETURN HTML
     }
 
 }

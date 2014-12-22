@@ -4,7 +4,7 @@ namespace controller\access;
 
 use \controller\Controller as Controller;
 
-class TestAccess extends Controller {
+class PracticeAccess extends Controller {
 
     public function __construct($model) {
         parent::__construct($model);
